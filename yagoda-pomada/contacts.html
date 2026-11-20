@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Контакты — салон красоты «Ягода Помада»</title>
+  <meta name="description" content="Адрес, телефон и режим работы «Ягода Помада». Как добраться и где припарковаться.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Контакты — «Ягода Помада»">
+  <meta property="og:description" content="Адрес, телефон, режим работы и карта.">
+  <meta property="og:image" content="https://wirerysource570-ship-it.github.io/salon-demo/yagoda-pomada/img/og.jpg">
+  <meta property="og:url" content="https://wirerysource570-ship-it.github.io/salon-demo/yagoda-pomada/contacts.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacts">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a> / Контакты</nav>
+        <h1>Контакты</h1>
+      </div>
+    </section>
+    <section class="section" style="padding-top:24px">
+      <div class="container contacts">
+        <div>
+          <div class="contact-card">
+            <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span data-salon="address"></span><small data-salon="howToGet"></small><a class="link-arrow" href="#" data-route>Построить маршрут →</a></div></div>
+            <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a data-salon="phone" href="#"></a><small>Ежедневно в рабочее время</small></div></div>
+            <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><a data-salon="email" href="#"></a><small>Для сотрудничества и сертификатов</small></div></div>
+            <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="flex:1"><ul class="hours" data-salon="hours"></ul></div></div>
+            <div class="messengers">
+              <a class="btn btn--primary btn--sm" href="#" data-demo-link>WhatsApp</a>
+              <a class="btn btn--ghost btn--sm" href="#" data-demo-link>Telegram</a>
+              <a class="btn btn--ghost btn--sm" data-salon-call href="tel:+79000000000">Позвонить</a>
+            </div>
+          </div>
+
+          <form class="callback form" id="callback-form" novalidate>
+            <h2 style="font-size:28px;margin:0">Перезвоните мне</h2>
+            <p class="muted" style="margin:0">Оставьте номер — администратор перезвонит и поможет с записью.</p>
+            <div class="field"><label for="cb-name">Имя</label><input class="input" id="cb-name" autocomplete="given-name"><span class="field__error">Укажите имя</span></div>
+            <div class="field"><label for="cb-phone">Телефон</label><input class="input" id="cb-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"><span class="field__error">Введите номер полностью</span></div>
+            <label class="check"><input type="checkbox" id="cb-consent"><span>Соглашаюсь на обработку персональных данных</span></label>
+            <button class="btn btn--primary btn--block" type="submit">Жду звонка</button>
+          </form>
+        </div>
+        <div class="map" data-map><div class="map__ph">Загружаем карту…</div></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/salon.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

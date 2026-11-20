@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Фокс — студия красоты: маникюр и педикюр, брови и ресницы</title>
+  <meta name="description" content="Студия красоты «Фокс»: волосы, ногти, брови и ресницы, макияж и косметология. Онлайн-запись за 1 минуту.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Фокс — студия красоты">
+  <meta property="og:description" content="Волосы, ногти, брови, макияж и косметология. Онлайн-запись за 1 минуту.">
+  <meta property="og:image" content="https://wirerysource570-ship-it.github.io/salon-demo/foks/img/og.jpg">
+  <meta property="og:url" content="https://wirerysource570-ship-it.github.io/salon-demo/foks/index.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Первый экран -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <span class="eyebrow" id="hero-eyebrow">Студия красоты в центре города</span>
+          <h1>Красота, к которой хочется возвращаться</h1>
+          <p id="hero-text">Волосы, ногти, брови, макияж и уход за кожей в одном месте. Опытные мастера, премиальная косметика и запись онлайн за одну минуту.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" data-book>Записаться онлайн</button>
+            <a class="btn btn--ghost" href="services.html">Смотреть услуги</a>
+          </div>
+          <div class="hero__rating"><span class="stars" aria-hidden="true">★★★★★</span><span><strong data-salon="rating"></strong> на картах · <span data-salon="rating-count"></span></span></div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media" style="--ph:#eed9d2"><img src="img/hero.webp" alt="Интерьер «Фокс»" fetchpriority="high"><div class="media__ph" aria-hidden="true"><span>Главное фото: интерьер или мастер за работой</span></div></div>
+          <div class="hero__badge"><strong>−15%</strong>на первый визит для новых клиентов</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Преимущества -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head"><h2>Почему выбирают нас</h2></div>
+        <div class="grid grid--4">
+          <div class="feature reveal"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M5 21c.8-4 3.6-6.5 7-6.5s6.2 2.5 7 6.5"/></svg></div><h3>Опытные мастера</h3><p>Средний стаж команды — 7 лет. Регулярно учимся и повышаем квалификацию.</p></div>
+          <div class="feature reveal"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l-1 4h-4z"/><rect x="7" y="7" width="10" height="14" rx="2"/><path d="M10 12h4"/></svg></div><h3>Премиальная косметика</h3><p>Работаем только на профессиональных материалах, подбираем уход под вас.</p></div>
+          <div class="feature reveal"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Стерильность</h3><p>Трёхэтапная обработка инструментов, крафт-пакет вскрываем при вас.</p></div>
+          <div class="feature reveal"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><h3>Удобная запись</h3><p>Выберите услугу, мастера и время онлайн — без звонков и ожидания.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Направления -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head"><div><span class="eyebrow">Услуги</span><h2>Всё для вашей красоты</h2></div><a class="link-arrow" href="services.html">Все услуги и цены →</a></div>
+        <div class="cats" id="home-cats"></div>
+      </div>
+    </section>
+
+    <!-- 4. Мастера -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <div><span class="eyebrow">Команда</span><h2>Наши мастера</h2></div>
+          <div class="carousel__nav"><button class="icon-btn" type="button" data-prev aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button><button class="icon-btn" type="button" data-next aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button></div>
+        </div>
+        <div class="carousel" data-carousel><div class="carousel__track" id="home-masters"></div></div>
+        <p style="margin:24px 0 0"><a class="link-arrow" href="masters.html">Все мастера →</a></p>
+      </div>
+    </section>
+
+    <!-- 5. Наши работы -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head"><div><span class="eyebrow">Портфолио</span><h2>Наши работы</h2></div><a class="link-arrow" href="portfolio.html">Всё портфолио →</a></div>
+        <div class="works" id="home-works"></div>
+        <div class="split" style="margin-top:48px">
+          <div id="home-ba"></div>
+          <div><h3 style="font-size:32px">Результат, который видно</h3><p class="muted">Потяните разделитель, чтобы сравнить «до» и «после». Больше примеров — в портфолио.</p><a class="btn btn--ghost" href="portfolio.html">Смотреть работы</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Акция -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="promo reveal">
+          <div><span class="eyebrow">Акция</span><h2 id="promo-title"></h2><p id="promo-text"></p></div>
+          <button class="btn btn--primary" type="button" data-book>Записаться со скидкой</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Отзывы -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <div><span class="eyebrow">Отзывы</span><h2>Нам доверяют</h2></div>
+          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+            <span class="rating-badge"><strong data-salon="rating"></strong><span class="stars" aria-hidden="true">★★★★★</span><span class="muted" data-salon="rating-count"></span></span>
+            <div class="carousel__nav"><button class="icon-btn" type="button" data-prev aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button><button class="icon-btn" type="button" data-next aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button></div>
+          </div>
+        </div>
+        <div class="carousel carousel--wide" data-carousel><div class="carousel__track" id="reviews"></div><div class="dots"></div></div>
+      </div>
+    </section>
+
+    <!-- 8. Контакты и карта -->
+    <section class="section">
+      <div class="container contacts">
+        <div class="contact-card reveal">
+          <h2 style="font-size:36px">Ждём вас</h2>
+          <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><span data-salon="address"></span><small data-salon="howToGet"></small></div></div>
+          <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a data-salon="phone" href="#"></a><small>Звоните или пишите в мессенджеры</small></div></div>
+          <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="flex:1"><ul class="hours" data-salon="hours"></ul></div></div>
+          <a class="btn btn--ghost btn--block" href="contacts.html" style="margin-top:12px">Все контакты</a>
+        </div>
+        <div class="map map--home reveal" data-map><div class="map__ph">Загружаем карту…</div></div>
+      </div>
+    </section>
+
+    <!-- 9. Финальный призыв -->
+    <section class="section section--soft cta">
+      <div class="container">
+        <h2>Запишитесь за 1 минуту</h2>
+        <p>Выберите услугу, мастера и удобное время — мы пришлём напоминание за день до визита.</p>
+        <button class="btn btn--primary" type="button" data-book>Записаться онлайн</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/salon.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
